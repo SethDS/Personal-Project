@@ -1,0 +1,64 @@
+<div class="adventure-main-container">
+
+    <div class="adventure-main-container-cover"></div>
+
+    <div class="adv-maps-outer">
+    <div class="adventure-maps">
+        <div id="a-map"></div>
+    </div>
+    </div>
+
+
+    <!--<div  ng-click="picCarousel()" class="adventure-pics">-->
+        <!--<span ng-repeat="pic in mergedAdv.pics">-->
+            <!--<img class="adv-pics" src="{{pic}}">-->
+        <!--</span>-->
+    <!--</div>-->
+
+
+
+
+        <div onmousemove="move()" class="adv-nav-container">
+            <div id="adv-nav-bar" class="adv-nav-bar">
+                <span class="adv-nav" ng-repeat="adventure in adventures" ng-click="compileAdv(adventure.adventure_id); animateStuff()" ng-mouseenter="highlightMapMarker(adventure.adventure_id)" ng-mouseleave="removeMarkerHighlight(adventure.adventure_id)">
+
+                    <h3>{{adventure.title}}</h3>
+                    <!--<h5>{{adventure.description}}</h5>-->
+                </span>
+
+            </div>
+        </div>
+
+            <div onmousemove="move2()" class="adv-pic-container">
+                <div id="adv-pic-bar" class="adv-pic-bar">
+                <span class="adv-pic" ng-repeat="pic in adventurePics">
+
+                    <img src="{{pic.image_file}}" class="pic-div"></img>
+                </span>
+
+
+
+                </div>
+
+            </div>
+
+
+
+</div>
+
+            <!--<div class="adventure-main-wrapper">-->
+
+        <!--<div ng-repeat="pic in adventurePics"><img src="{{pic.image_file}}"></div>-->
+        <!--<div>-->
+            <!--<ul>-->
+                <!--<li ng-repeat="adventure in adventures">-->
+                    <!--<h4>{{adventure.title}}</h4><br>-->
+                    <!--<p>{{adventure.description}}</p><br>-->
+                    <!--<p>{{adventure.directions}}</p><br>-->
+                    <!--<p>{{adventure.packlist}}</p>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+
+    <!--</div>-->
+

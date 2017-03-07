@@ -1,0 +1,128 @@
+*:focus {
+    outline: none;
+}
+
+.home-main-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-image: url('../assets/lukasz-szmigiel-38651.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.home-main-wrapper {
+    height: 100%;
+    width: 100%;
+    /*background-color: darkgrey;*/
+    /*opacity: .4;*/
+}
+
+.nav-bar-container{
+    color: whitesmoke;
+}
+
+.view-toggle-container {
+    position: absolute;
+    width: 10vw;
+    height: 2vw;
+    margin-top: 2.5vh;
+    display: flex;
+    color: whitesmoke;
+    justify-content: space-around;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: whitesmoke;
+    margin-left: 10vw;
+    border-radius: 1.87rem;
+}
+.profile-toggle {
+    border-left: solid;
+    border-left-width: 1px;
+    border-left-color: whitesmoke;
+    padding-left: 15%;
+}
+
+
+.nav-bar-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin-top: 2.5vh;
+;
+}
+
+.nav-bar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.main-logo {
+    height: 100px;
+    width: 100px;
+    opacity: .7;
+}
+
+.login {
+    color: whitesmoke;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 2.5vh;
+    right: 20vw;
+    width: 10vw;
+    height: 2vw;
+    border-style: solid;
+    border-width: 1px;
+    border-color: whitesmoke;
+    border-radius: 1.87rem;
+    cursor: pointer;
+}
+.login:hover {
+    background-color: white;
+    color: black;
+    opacity: .6;
+}
+
+.fullscreen-icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.fullscreen-button {
+    height: 20px;
+    width: 20px;
+}
+
+
+.home-nav-container {
+    position: absolute;
+    overflow: hidden;
+    bottom: 0;
+}
+.home-nav-bar {
+    display: flex;
+    overflow: hidden;
+}
+.home-nav {
+    min-width: 30vw;
+    width:30%;
+    height: 85vh;
+    border-top:1px solid darkslategray;
+    border-left: 1px solid darkslategray;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.home-nav:hover {
+    background-color: white;
+    color: black;
+    opacity: .4;
+}

@@ -1,0 +1,128 @@
+
+<div class="all-wrapper">
+
+<div class="profile-background-wrapper">
+    <iframe  class="profile-background" width="560" height="315" src="https://www.youtube.com/embed/ifcilDcfLlA?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=ifcilDcfLlA" frameborder="0" allowfullscreen playsinline autoplay muted loop></iframe>
+</div>
+
+    <img ui-sref="home" class="profile-main-logo" src="../assets/theoutbound.png" ui-sref="home">
+
+    <div class="new-adventure-show">
+        <h3 class="new-adv-header">Create New Adventure</h3>
+        <div class="new-adventure">
+            <input class="profile-input" ng-model="newAdventure.title" placeholder="Title"> <br>
+            <input class="profile-input" ng-model="newAdventure.description" placeholder="Description"> <br>
+            <input class="profile-input" ng-model="newAdventure.directions" placeholder="Directions"> <br>
+            <input class="profile-input" ng-model="newAdventure.packlist" placeholder="Packlist"> <br>
+
+            <h4>Add Up To 6 Images</h4>
+            <input class="profile-button" type="file" images="images" accept="image/*" pic-dir><br>
+            <input class="profile-button" type="file" images="images" accept="image/*" pic-dir><br>
+            <input class="profile-button" type="file" images="images" accept="image/*" pic-dir><br>
+            <input class="profile-button" type="file" images="images" accept="image/*" pic-dir><br>
+            <input class="profile-button" type="file" images="images" accept="image/*" pic-dir><br>
+            <input class="profile-button" type="file" images="images" accept="image/*" pic-dir><br>
+
+            <button class="profile-submit" ng-click="submitAdv(newAdventure)">SUBMIT</button>
+
+            <div class="map-hider" ng-show="mapHider">
+                <h4>Please Add A Location</h4><br>
+                <map-directive id="the-map"></map-directive>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="profile-nav" ng-click="profileNavToggle()" ng-mouseenter="profileNavHighlight()">
+        <div class="profile-nav-toggle">
+            <span class="nav-toggle" ng-click="newAdventureShow()"><p>create new adventure</p></span>
+            <span class="nav-toggle"><p>create new story</p></span>
+            <span class="nav-toggle"><p>create new kit</p></span>
+            <span class="nav-toggle"><p>create new job</p></span>
+            <span class="nav-toggle" ng-click="profileShow()"><p>profile</p></span>
+        </div>
+
+    </div>
+
+    <div class="profile-nav-container">
+        <div class="profile-main"></div>
+    </div>
+
+
+    <!--<div class="main-wrapper">-->
+<!--<div>-->
+    <!--<h3 ng-click="classA = !classA; classJ = false; classJob = false; classK = false">Create New Adventure</h3>-->
+    <!--<div class="new-adventure" ng-show="classA">-->
+    <!--<input ng-model="newAdventure.title" placeholder="Title"> <br>-->
+    <!--<input ng-model="newAdventure.description" placeholder="Description"> <br>-->
+    <!--<input ng-model="newAdventure.directions" placeholder="Directions"> <br>-->
+    <!--<input ng-model="newAdventure.packlist" placeholder="Packlist"> <br>-->
+
+        <!--<h4>Add Up To 5 Images</h4>-->
+        <!--<input type="file" images="images" accept="image/*" pic-dir><br>-->
+        <!--<input type="file" images="images" accept="image/*" pic-dir><br>-->
+        <!--<input type="file" images="images" accept="image/*" pic-dir><br>-->
+        <!--<input type="file" images="images" accept="image/*" pic-dir><br>-->
+        <!--<input type="file" images="images" accept="image/*" pic-dir><br>-->
+        <!--<input type="file" images="images" accept="image/*" pic-dir><br>-->
+
+        <!--<button ng-click="submitAdv(newAdventure)">SUBMIT</button>-->
+
+        <!--<div class="map-hider" ng-show="mapHider">-->
+            <!--<h4>Please Add A Location</h4><br>-->
+            <!--<map-directive></map-directive>-->
+        <!--</div>-->
+
+    <!--</div>-->
+
+<!--</div> <br>-->
+
+<!--<div>-->
+    <!--<h3 ng-click="classJ = !classJ; classA = false; classJob = false; classK = false">Create New Story Or Article</h3>-->
+    <!--<div ng-show="classJ">-->
+    <!--<input ng-model="newArticle.title" placeholder="Title"> <br>-->
+    <!--<input ng-model="newArticle.body" placeholder="Body"> <br>-->
+    <!--<h4>Add Up To 5 Images</h4>-->
+    <!--<input type="file" images="images" accept="image/*" pic-dir><br>-->
+    <!--<input type="file" images="images" accept="image/*" pic-dir><br>-->
+    <!--<input type="file" images="images" accept="image/*" pic-dir><br>-->
+    <!--<input type="file" images="images" accept="image/*" pic-dir><br>-->
+    <!--<input type="file" images="images" accept="image/*" pic-dir><br>-->
+    <!--<button ng-click="submitArt(newArticle)">SUBMIT</button>-->
+    <!--</div>-->
+<!--</div> <br>-->
+
+<!--<div>-->
+    <!--<h3 ng-click="classJob = !classJob; classJ = false; classA = false; classK = false">Create New Job</h3>-->
+    <!--<div ng-show="classJob">-->
+    <!--<input ng-model="newJob.title" placeholder="Title"> <br>-->
+    <!--<input ng-model="newJob.description" placeholder="Description"> <br>-->
+    <!--<input ng-model="newJob.requirements" placeholder="Requirements"> <br>-->
+    <!--<h4>Add Up To 5 Images</h4>-->
+    <!--<input type="file" images="images" accept="image/*" pic-dir><br>-->
+    <!--<input type="file" images="images" accept="image/*" pic-dir><br>-->
+    <!--<input type="file" images="images" accept="image/*" pic-dir><br>-->
+    <!--<input type="file" images="images" accept="image/*" pic-dir><br>-->
+    <!--<input type="file" images="images" accept="image/*" pic-dir><br>-->
+    <!--<button ng-click="submitJob(newJob)">SUBMIT</button>-->
+    <!--</div>-->
+<!--</div> <br>-->
+
+<!--<div>-->
+    <!--<h3 ng-click="classK = !classK; classJ = false; classJob = false; classA = false">Create New Kit</h3>-->
+    <!--<div ng-show="classK">-->
+    <!--<input ng-model="newKit.title" placeholder="Title"> <br>-->
+    <!--<input ng-model="newKit.description" placeholder="Description"> <br>-->
+    <!--<input ng-model="newKit.products" placeholder="Products"> <br>-->
+    <!--<h4>Add Up To 5 Images</h4>-->
+    <!--<input type="file" images="images" accept="image/*" pic-dir><br>-->
+    <!--<input type="file" images="images" accept="image/*" pic-dir><br>-->
+    <!--<input type="file" images="images" accept="image/*" pic-dir><br>-->
+    <!--<input type="file" images="images" accept="image/*" pic-dir><br>-->
+    <!--<input type="file" images="images" accept="image/*" pic-dir><br>-->
+    <!--<button ng-click="submitKit(newKit)">SUBMIT</button>-->
+    <!--</div>-->
+    <!--</div> <br>-->
+    <!--</div>-->
+
+</div>

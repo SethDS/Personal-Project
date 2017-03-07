@@ -1,0 +1,116 @@
+
+
+
+.all-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.main-wrapper {
+    position: fixed;
+    z-index: 1;
+}
+
+.profile-background-wrapper{
+    margin-top: -10px;
+    pointer-events: none;
+}
+.profile-background {
+    position: fixed;
+    margin-left: -20vw;
+    overflow: hidden;
+    height: 150vh;
+    width: 150vw;
+    z-index: -100;
+}
+
+.profile-nav-container {
+    height: 100%;
+    width: 95vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    opacity: .5;
+
+}
+.profile-nav {
+    height: 100vh;
+    width: 5vw;
+}
+.profile-nav-toggle {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    justify-content: space-around;
+}
+.nav-toggle {
+    position: relative;
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+}
+.nav-toggle:hover {
+    background-color: lightgray;
+}
+.profile-main-logo {
+    position: fixed;
+    top: 2.5vh;
+    right: 2.5vh;
+    height: 50px;
+    width: 50px;
+    z-index: 100;
+}
+
+.new-adventure-show {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    right: 0;
+    background-image: url("../assets/home-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+.profile-input {
+    background-color: transparent;
+    padding: 20px 20px 20px 20px;
+    width: 20vw;
+    font-size: x-large;
+    border-bottom: 2px dotted darkslategray;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.profile-submit {
+    background-color: transparent;
+    color: darkslategray;
+    height: 5vh;
+    width: 10vw;
+    border: 1px solid darkslategray;
+    margin-top: 5vh;
+}
+.profile-submit:hover {
+    background-color: gray;
+    color: beige;
+    opacity: .5;
+}
+.new-adv-header {
+    margin-right: 5vw;
+}
+
+.map-hider {
+    z-index: 99;
+}
+#map {
+    height: 20vh;
+    width: 30vw;
+}

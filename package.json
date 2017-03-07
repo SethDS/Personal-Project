@@ -1,0 +1,45 @@
+{
+  "name": "personal-project",
+  "version": "1.0.0",
+  "description": "First full-stack project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SethDS/Personal-Project.git"
+  },
+  "author": "SethDS",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SethDS/Personal-Project/issues"
+  },
+  "homepage": "https://github.com/SethDS/Personal-Project#readme",
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-ui-router": "^0.4.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.16.0",
+    "bootstrap": "^3.3.7",
+    "cors": "^2.8.1",
+    "dependencies": "0.0.1",
+    "express": "^4.14.1",
+    "express-session": "^1.15.0",
+    "github": "^8.2.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-cachebust": "0.0.6",
+    "gulp-concat": "^2.6.1",
+    "gulp-print": "^2.0.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.4.0",
+    "jquery": "^3.1.1",
+    "massive": "^2.6.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "sass": "^0.5.0",
+    "save": "^2.3.0",
+    "scss": "^0.2.4"
+  }
+}

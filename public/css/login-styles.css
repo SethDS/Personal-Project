@@ -1,0 +1,219 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.login-main-wrapper {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -100;
+    background-image: url('../assets/nasa-90395.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-login {
+    float: left;
+    z-index: 1;
+}
+.main-login-wrapper {
+    margin-top: 55vh;
+    margin-left: 10vw;
+}
+.login-header {
+    float: left;
+    margin-top: 40vh;
+    margin-left: 10vw;
+    letter-spacing: 10px;
+    color: #1c3c2f;
+
+}
+.login-header-footer {
+    float: left;
+    margin-top: 50vh;
+    margin-left: -6vw;
+    letter-spacing: 10px;
+    color: #1c3c2f;
+
+}
+
+.login-email{
+    font-size: larger;
+    padding: 20px;
+    background-color: transparent;
+    border-bottom: dotted;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 20vw;
+    color: #1c3c2f;
+
+}
+    .login-email:hover {
+        border-top: 1px dotted #1c3c2f;
+    }
+.login-password {
+    margin-top: 5vh;
+    font-size: larger;
+    padding: 20px;
+    background-color: transparent;
+    border-bottom: dotted;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 20vw;
+    color: #1c3c2f;
+
+}
+.login-password:hover {
+    border-top: 1px dotted #1c3c2f;
+}
+.login-submit {
+    margin-top: 5vh;
+    background-color: transparent;
+    height: 3vh;
+    width: 25vw;
+    border: 1px dotted #1c3c2f;
+    color: #1c3c2f;
+}
+.login-submit:hover {
+    background-color: #1c3c2f;
+    color: black;
+    opacity: .4;
+}
+
+
+
+
+.main-signup {
+    float: right;
+    z-index: 10;
+}
+.main-signup-wrapper {
+    margin-top: 25vh;
+    margin-right: 5vw;
+}
+.signup-header {
+    position: fixed;
+    float: left;
+    margin-left: 20vw;
+    letter-spacing: 10px;
+    color: #1c3c2f;
+}
+.think {
+    position: fixed;
+    margin-left: 60vw;
+    margin-top: 10vh;
+    float: right;
+    letter-spacing: 10px;
+    color: #1c3c2f;
+
+}
+.dare {
+    position: fixed;
+    margin-left: 48vw;
+    margin-top: 25vh;
+    float: right;
+    letter-spacing: 10px;
+    color: #1c3c2f;
+
+}
+.create-account {
+    position: fixed;
+    margin-left: 41vw;
+    margin-top: 20vh;
+    float: right;
+    letter-spacing: 10px;
+    color: #1c3c2f;
+
+}
+.signup-name {
+    margin-top: 5vh;
+    font-size: larger;
+    padding: 20px;
+    background-color: transparent;
+    border-bottom: dotted;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 20vw;
+    color: #1c3c2f;
+
+}
+.signup-name:hover {
+    border-top: 1px dotted #1c3c2f;
+}
+.signup-email {
+    font-size: larger;
+    padding: 20px;
+    background-color: transparent;
+    border-bottom: dotted;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 20vw;
+    color: #1c3c2f;
+
+}
+.signup-email:hover {
+    border-top: 1px dotted #1c3c2f;
+}
+.signup-password {
+    margin-top: 5vh;
+    font-size: larger;
+    padding: 20px;
+    background-color: transparent;
+    border-bottom: dotted;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 20vw;
+    color: #1c3c2f;
+
+}
+.signup-password:hover {
+    border-top: 1px dotted #1c3c2f;
+}
+.create-account-button {
+    margin-top: 5vh;
+    background-color: transparent;
+    height: 3vh;
+    width: 25vw;
+    border: 1px dotted #1c3c2f;
+    color: #1c3c2f;
+}
+.create-account-button:hover {
+    background-color: #1c3c2f;
+    color: black;
+    opacity: .4;
+}
+
+.main-logo-login {
+    position: fixed;
+    top: 5vh;
+    left: 5vh;
+    height: 100px;
+    width: 100px;
+    opacity: .7;
+}
+
+.main-logo-login-bottom {
+    position: fixed;
+    bottom: 1.5vh;
+    right: 30vh;
+    height: 30px;
+    width: 30px;
+    opacity: .9;
+}
+.slogan {
+    position: fixed;
+    bottom: 1.5vh;
+    right: 5vh;
+    opacity: .9;
+    letter-spacing: 3px;
+    font-size: 10px;
+    color: #1c3c2f;
+}

@@ -1,0 +1,112 @@
+
+
+.adventure-main-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-image: url('../assets/james-donovan-180295.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.adventure-main-container-cover {
+    height: 100%;
+    width: 100%;
+    background-color: darkgrey;
+    opacity: 0.4;
+}
+
+.adv-nav-container {
+    position: absolute;
+    overflow: hidden;
+    top: 5vh;
+}
+.adv-nav-bar {
+    display: flex;
+    overflow: hidden;
+}
+.adv-nav {
+    width: 20vw;
+    height: 15vh;
+    /*border-top:1px solid white;*/
+    border-left: 1px solid darkgrey;
+    /*border-bottom: 1px solid white;*/
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    background-color: white;
+    opacity: .5;
+}
+.adv-nav:hover {
+    height: 20vh;
+    background-color: darkslategray;
+    color: white;
+    opacity: .5;
+}
+
+.adv-pic-container {
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    top: 26vh;
+}
+.adv-pic-bar {
+    display: flex;
+    overflow: hidden;
+}
+.adv-pic {
+    width: 20vw;
+    height: 15vh;
+    /*border-top:1px solid white;*/
+    border-left: 1px solid darkgrey;
+    /*border-bottom: 1px solid white;*/
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adv-pic:hover {
+    height: 50vh;
+    width: 50vw;
+}
+
+.adv-maps-outer {
+    position: fixed;
+    bottom: 2.5vw;
+    left: 2.5vw;
+    height: 70vh;
+    width: 95vw;
+    background-color: white;
+    overflow: hidden;
+}
+.adventure-maps {
+    height: 100%;
+    width: 100%;
+}
+#a-map {
+    height: 100%;
+    width: 100%;
+}
+
+/*.adventure-pics {*/
+    /*position: fixed;*/
+    /*bottom: 2.5vw;*/
+    /*right: 2.5vw;*/
+    /*height: 70vh;*/
+    /*width: 45.75vw;*/
+    /*overflow: hidden;*/
+/*}*/
+/*.adv-pics {*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 50%;*/
+    /*transform: translate(-50%, -50%);*/
+    /*!*height: 100px;*!*/
+    /*!*width: 100px;*!*/
+    /*!*display: none;*!*/
+/*}*/
