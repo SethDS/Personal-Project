@@ -1,0 +1,4 @@
+How do I get Images to upload to the adventure they need to be with after they get turned into base 64?
+Make an SQL request that gets all the adventure pictures with the correct id and association.
+Take all those picture strings and run them through a function to convert them back into png files.
+add all of those picture strings onto a scope variable so I can show them.
