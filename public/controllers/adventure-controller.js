@@ -108,7 +108,7 @@ $scope.getAdventures = function(){
       for(var i =0 ; i < response.data.length; i++){
           $scope.adventures.push(response.data[i])
       }
-      $scope.getAdventurePics()
+      $scope.getLocations()
 
   });
     console.log($scope.adventures);
@@ -119,10 +119,9 @@ $scope.getAdventures();
 $scope.getAdventurePics = function(){
     adventureService.getAdventurePics().then(function(response){
         console.log(response);
-        for(var i =0 ; i < response.data.length; i++){
+        for(var i =0 ; i < response.data.length; i++) {
             $scope.adventurePics.push(response.data[i])
         }
-            $scope.getLocations()
     });
     console.log($scope.adventurePics)
 };
@@ -191,20 +190,15 @@ $scope.getLocations = function(){
 
         $scope.finalMarkers = finalMarkers;
 
+        $scope.getAdventurePics();
+
     }; //end of initMap function
 
 
     $scope.highlightMapMarker = function(id){
             for(var i = 0; i < $scope.finalMarkers.length; i++){
                 if(id === $scope.finalMarkers[i].adv_id){
-                  $scope.finalMarkers[i].setAnimation(google.maps.Animation.BOUNCE); //setIcon({
-                  //     path: google.maps.SymbolPath.CIRCLE,
-                  //     scale: 8.5,
-                  //     fillColor: "#006400",
-                  //     fillOpacity: 0.4,
-                  //     strokeWeight: 0.4
-                  // })
-
+                  $scope.finalMarkers[i].setAnimation(google.maps.Animation.BOUNCE);
                 }
             }
     };
@@ -212,22 +206,10 @@ $scope.getLocations = function(){
     $scope.removeMarkerHighlight = function(id){
         for(var i = 0; i < $scope.finalMarkers.length; i++){
             if(id === $scope.finalMarkers[i].adv_id){
-                $scope.finalMarkers[i].setAnimation(null); //setIcon({
-                //     path: google.maps.SymbolPath.CIRCLE,
-                //     scale: 8.5,
-                //     fillColor: "#006400",
-                //     fillOpacity: 0.4,
-                //     strokeWeight: 0.4
-                // })
-
+                $scope.finalMarkers[i].setAnimation(null);
             }
         }
     };
-
-    // setTimeout(function(){
-    //     TweenMax.to($('.login-trans'), 1, {opacity: 0)
-    // }, 2000);
-    //
 
     $scope.animateStuff = function(){
         TweenMax.to($('.adv-maps-outer'), 1, {height: '50vh', width: '100%', left : '0'});
