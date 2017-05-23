@@ -52,13 +52,13 @@
     top: 0;
     width: 100%;
     margin-top: 2.5vh;
-;
 }
 
 .nav-bar {
     position: relative;
     display: flex;
     justify-content: center;
+
 }
 
 .main-logo {
@@ -113,16 +113,21 @@
     min-width: 30vw;
     width:30%;
     height: 85vh;
-    border-top:1px solid darkslategray;
-    border-left: 1px solid darkslategray;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-
-}
-.home-nav:hover {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 3rem;
     background-color: white;
     color: black;
     opacity: .4;
+    margin-left: 10px;
+}
+.home-nav h3{
+    cursor: pointer;
+}
+.home-nav:hover {
+    background-color: transparent;
+    /*color: white;*/
 }
