@@ -10,14 +10,16 @@ body {
     width: 100%;
     position: fixed;
     z-index: -100;
-    background-image: url('../assets/nasa-90395.jpg');
+    background-image: url('../assets/tim-stief-169209.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    filter: blur(5px);
 }
 
 .main-login {
     float: left;
     z-index: 1;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 .main-login-wrapper {
     margin-top: 55vh;
@@ -28,15 +30,7 @@ body {
     margin-top: 40vh;
     margin-left: 10vw;
     letter-spacing: 10px;
-    color: #1c3c2f;
-
-}
-.login-header-footer {
-    float: left;
-    margin-top: 50vh;
-    margin-left: -6vw;
-    letter-spacing: 10px;
-    color: #1c3c2f;
+    color: white;
 
 }
 
@@ -49,12 +43,12 @@ body {
     border-left: none;
     border-right: none;
     width: 20vw;
-    color: #1c3c2f;
-
+    color:  white;
 }
     .login-email:hover {
-        border-top: 1px dotted #1c3c2f;
+        border-top: 1px dotted  white;
     }
+
 .login-password {
     margin-top: 5vh;
     font-size: larger;
@@ -65,23 +59,23 @@ body {
     border-left: none;
     border-right: none;
     width: 20vw;
-    color: #1c3c2f;
+    color: white;
 
 }
 .login-password:hover {
-    border-top: 1px dotted #1c3c2f;
+    border-top: 1px dotted white;
 }
 .login-submit {
     margin-top: 5vh;
     background-color: transparent;
     height: 3vh;
     width: 25vw;
-    border: 1px dotted #1c3c2f;
-    color: #1c3c2f;
+    border: 1px dotted  white;
+    color:  white;
 }
 .login-submit:hover {
-    background-color: #1c3c2f;
-    color: black;
+    background-color: white;
+    color: white;
     opacity: .4;
 }
 
@@ -96,40 +90,7 @@ body {
     margin-top: 25vh;
     margin-right: 5vw;
 }
-.signup-header {
-    position: fixed;
-    float: left;
-    margin-left: 20vw;
-    letter-spacing: 10px;
-    color: #1c3c2f;
-}
-.think {
-    position: fixed;
-    margin-left: 60vw;
-    margin-top: 10vh;
-    float: right;
-    letter-spacing: 10px;
-    color: #1c3c2f;
 
-}
-.dare {
-    position: fixed;
-    margin-left: 48vw;
-    margin-top: 25vh;
-    float: right;
-    letter-spacing: 10px;
-    color: #1c3c2f;
-
-}
-.create-account {
-    position: fixed;
-    margin-left: 41vw;
-    margin-top: 20vh;
-    float: right;
-    letter-spacing: 10px;
-    color: #1c3c2f;
-
-}
 .signup-name {
     margin-top: 5vh;
     font-size: larger;
@@ -140,11 +101,11 @@ body {
     border-left: none;
     border-right: none;
     width: 20vw;
-    color: #1c3c2f;
+    color: white;
 
 }
 .signup-name:hover {
-    border-top: 1px dotted #1c3c2f;
+    border-top: 1px dotted white;
 }
 .signup-email {
     font-size: larger;
@@ -155,11 +116,11 @@ body {
     border-left: none;
     border-right: none;
     width: 20vw;
-    color: #1c3c2f;
+    color: white;
 
 }
 .signup-email:hover {
-    border-top: 1px dotted #1c3c2f;
+    border-top: 1px dotted white;
 }
 .signup-password {
     margin-top: 5vh;
@@ -171,23 +132,23 @@ body {
     border-left: none;
     border-right: none;
     width: 20vw;
-    color: #1c3c2f;
+    color: white;
 
 }
 .signup-password:hover {
-    border-top: 1px dotted #1c3c2f;
+    border-top: 1px dotted white;
 }
 .create-account-button {
     margin-top: 5vh;
     background-color: transparent;
     height: 3vh;
     width: 25vw;
-    border: 1px dotted #1c3c2f;
-    color: #1c3c2f;
+    border: 1px dotted white;
+    color: white;
 }
 .create-account-button:hover {
-    background-color: #1c3c2f;
-    color: black;
+    background-color: white;
+    color:  white;
     opacity: .4;
 }
 
@@ -215,5 +176,9 @@ body {
     opacity: .9;
     letter-spacing: 3px;
     font-size: 10px;
-    color: #1c3c2f;
+    color: white;
+}
+
+.login-input{
+    color: white;
 }
