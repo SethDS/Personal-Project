@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52029ad4-0d42-4335-83bd-3aae758a01df" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/login-styles.css" afterPath="$PROJECT_DIR$/public/css/login-styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/views/login.html" afterPath="$PROJECT_DIR$/public/views/login.html" />
-    </list>
+    <list default="true" id="52029ad4-0d42-4335-83bd-3aae758a01df" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
